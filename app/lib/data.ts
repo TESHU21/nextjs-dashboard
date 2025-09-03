@@ -9,6 +9,7 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
+
 const sslOption = process.env.POSTGRES_SSL === 'disable' ? undefined : 'require';
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: sslOption as any });
 
